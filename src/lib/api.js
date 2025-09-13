@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://task-management-api-a8pm.onrender.com';
 
 async function request(endpoint, options = {}) {
 	const res = await fetch(`${API_URL}${endpoint}`, {
